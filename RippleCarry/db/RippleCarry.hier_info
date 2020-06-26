@@ -1,0 +1,849 @@
+|RippleCarry
+ci => FullAdder:PET0.cin
+a[0] => reg32:REG0.d[0]
+a[1] => reg32:REG0.d[1]
+a[2] => reg32:REG0.d[2]
+a[3] => reg32:REG0.d[3]
+a[4] => reg32:REG0.d[4]
+a[5] => reg32:REG0.d[5]
+a[6] => reg32:REG0.d[6]
+a[7] => reg32:REG0.d[7]
+a[8] => reg32:REG0.d[8]
+a[9] => reg32:REG0.d[9]
+a[10] => reg32:REG0.d[10]
+a[11] => reg32:REG0.d[11]
+a[12] => reg32:REG0.d[12]
+a[13] => reg32:REG0.d[13]
+a[14] => reg32:REG0.d[14]
+a[15] => reg32:REG0.d[15]
+a[16] => reg32:REG0.d[16]
+a[17] => reg32:REG0.d[17]
+a[18] => reg32:REG0.d[18]
+a[19] => reg32:REG0.d[19]
+a[20] => reg32:REG0.d[20]
+a[21] => reg32:REG0.d[21]
+a[22] => reg32:REG0.d[22]
+a[23] => reg32:REG0.d[23]
+a[24] => reg32:REG0.d[24]
+a[25] => reg32:REG0.d[25]
+a[26] => reg32:REG0.d[26]
+a[27] => reg32:REG0.d[27]
+a[28] => reg32:REG0.d[28]
+a[29] => reg32:REG0.d[29]
+a[30] => reg32:REG0.d[30]
+a[31] => reg32:REG0.d[31]
+b[0] => reg32:REG1.d[0]
+b[1] => reg32:REG1.d[1]
+b[2] => reg32:REG1.d[2]
+b[3] => reg32:REG1.d[3]
+b[4] => reg32:REG1.d[4]
+b[5] => reg32:REG1.d[5]
+b[6] => reg32:REG1.d[6]
+b[7] => reg32:REG1.d[7]
+b[8] => reg32:REG1.d[8]
+b[9] => reg32:REG1.d[9]
+b[10] => reg32:REG1.d[10]
+b[11] => reg32:REG1.d[11]
+b[12] => reg32:REG1.d[12]
+b[13] => reg32:REG1.d[13]
+b[14] => reg32:REG1.d[14]
+b[15] => reg32:REG1.d[15]
+b[16] => reg32:REG1.d[16]
+b[17] => reg32:REG1.d[17]
+b[18] => reg32:REG1.d[18]
+b[19] => reg32:REG1.d[19]
+b[20] => reg32:REG1.d[20]
+b[21] => reg32:REG1.d[21]
+b[22] => reg32:REG1.d[22]
+b[23] => reg32:REG1.d[23]
+b[24] => reg32:REG1.d[24]
+b[25] => reg32:REG1.d[25]
+b[26] => reg32:REG1.d[26]
+b[27] => reg32:REG1.d[27]
+b[28] => reg32:REG1.d[28]
+b[29] => reg32:REG1.d[29]
+b[30] => reg32:REG1.d[30]
+b[31] => reg32:REG1.d[31]
+clock => reg32:REG0.clk
+clock => reg32:REG1.clk
+clock => reg32:REG2.clk
+s[0] <= reg32:REG2.q[0]
+s[1] <= reg32:REG2.q[1]
+s[2] <= reg32:REG2.q[2]
+s[3] <= reg32:REG2.q[3]
+s[4] <= reg32:REG2.q[4]
+s[5] <= reg32:REG2.q[5]
+s[6] <= reg32:REG2.q[6]
+s[7] <= reg32:REG2.q[7]
+s[8] <= reg32:REG2.q[8]
+s[9] <= reg32:REG2.q[9]
+s[10] <= reg32:REG2.q[10]
+s[11] <= reg32:REG2.q[11]
+s[12] <= reg32:REG2.q[12]
+s[13] <= reg32:REG2.q[13]
+s[14] <= reg32:REG2.q[14]
+s[15] <= reg32:REG2.q[15]
+s[16] <= reg32:REG2.q[16]
+s[17] <= reg32:REG2.q[17]
+s[18] <= reg32:REG2.q[18]
+s[19] <= reg32:REG2.q[19]
+s[20] <= reg32:REG2.q[20]
+s[21] <= reg32:REG2.q[21]
+s[22] <= reg32:REG2.q[22]
+s[23] <= reg32:REG2.q[23]
+s[24] <= reg32:REG2.q[24]
+s[25] <= reg32:REG2.q[25]
+s[26] <= reg32:REG2.q[26]
+s[27] <= reg32:REG2.q[27]
+s[28] <= reg32:REG2.q[28]
+s[29] <= reg32:REG2.q[29]
+s[30] <= reg32:REG2.q[30]
+s[31] <= reg32:REG2.q[31]
+cout <= FullAdder:FIRST:31:PET1.cout
+
+
+|RippleCarry|reg32:REG0
+d[0] => Qreg[0].DATAIN
+d[1] => Qreg[1].DATAIN
+d[2] => Qreg[2].DATAIN
+d[3] => Qreg[3].DATAIN
+d[4] => Qreg[4].DATAIN
+d[5] => Qreg[5].DATAIN
+d[6] => Qreg[6].DATAIN
+d[7] => Qreg[7].DATAIN
+d[8] => Qreg[8].DATAIN
+d[9] => Qreg[9].DATAIN
+d[10] => Qreg[10].DATAIN
+d[11] => Qreg[11].DATAIN
+d[12] => Qreg[12].DATAIN
+d[13] => Qreg[13].DATAIN
+d[14] => Qreg[14].DATAIN
+d[15] => Qreg[15].DATAIN
+d[16] => Qreg[16].DATAIN
+d[17] => Qreg[17].DATAIN
+d[18] => Qreg[18].DATAIN
+d[19] => Qreg[19].DATAIN
+d[20] => Qreg[20].DATAIN
+d[21] => Qreg[21].DATAIN
+d[22] => Qreg[22].DATAIN
+d[23] => Qreg[23].DATAIN
+d[24] => Qreg[24].DATAIN
+d[25] => Qreg[25].DATAIN
+d[26] => Qreg[26].DATAIN
+d[27] => Qreg[27].DATAIN
+d[28] => Qreg[28].DATAIN
+d[29] => Qreg[29].DATAIN
+d[30] => Qreg[30].DATAIN
+d[31] => Qreg[31].DATAIN
+clk => Qreg[0].CLK
+clk => Qreg[1].CLK
+clk => Qreg[2].CLK
+clk => Qreg[3].CLK
+clk => Qreg[4].CLK
+clk => Qreg[5].CLK
+clk => Qreg[6].CLK
+clk => Qreg[7].CLK
+clk => Qreg[8].CLK
+clk => Qreg[9].CLK
+clk => Qreg[10].CLK
+clk => Qreg[11].CLK
+clk => Qreg[12].CLK
+clk => Qreg[13].CLK
+clk => Qreg[14].CLK
+clk => Qreg[15].CLK
+clk => Qreg[16].CLK
+clk => Qreg[17].CLK
+clk => Qreg[18].CLK
+clk => Qreg[19].CLK
+clk => Qreg[20].CLK
+clk => Qreg[21].CLK
+clk => Qreg[22].CLK
+clk => Qreg[23].CLK
+clk => Qreg[24].CLK
+clk => Qreg[25].CLK
+clk => Qreg[26].CLK
+clk => Qreg[27].CLK
+clk => Qreg[28].CLK
+clk => Qreg[29].CLK
+clk => Qreg[30].CLK
+clk => Qreg[31].CLK
+q[0] <= Qreg[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= Qreg[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= Qreg[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= Qreg[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= Qreg[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= Qreg[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= Qreg[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= Qreg[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= Qreg[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= Qreg[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= Qreg[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= Qreg[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= Qreg[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= Qreg[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= Qreg[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= Qreg[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= Qreg[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= Qreg[19].DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= Qreg[20].DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= Qreg[21].DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= Qreg[22].DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= Qreg[23].DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= Qreg[24].DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= Qreg[25].DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= Qreg[26].DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= Qreg[27].DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= Qreg[28].DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= Qreg[29].DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= Qreg[30].DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= Qreg[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|reg32:REG1
+d[0] => Qreg[0].DATAIN
+d[1] => Qreg[1].DATAIN
+d[2] => Qreg[2].DATAIN
+d[3] => Qreg[3].DATAIN
+d[4] => Qreg[4].DATAIN
+d[5] => Qreg[5].DATAIN
+d[6] => Qreg[6].DATAIN
+d[7] => Qreg[7].DATAIN
+d[8] => Qreg[8].DATAIN
+d[9] => Qreg[9].DATAIN
+d[10] => Qreg[10].DATAIN
+d[11] => Qreg[11].DATAIN
+d[12] => Qreg[12].DATAIN
+d[13] => Qreg[13].DATAIN
+d[14] => Qreg[14].DATAIN
+d[15] => Qreg[15].DATAIN
+d[16] => Qreg[16].DATAIN
+d[17] => Qreg[17].DATAIN
+d[18] => Qreg[18].DATAIN
+d[19] => Qreg[19].DATAIN
+d[20] => Qreg[20].DATAIN
+d[21] => Qreg[21].DATAIN
+d[22] => Qreg[22].DATAIN
+d[23] => Qreg[23].DATAIN
+d[24] => Qreg[24].DATAIN
+d[25] => Qreg[25].DATAIN
+d[26] => Qreg[26].DATAIN
+d[27] => Qreg[27].DATAIN
+d[28] => Qreg[28].DATAIN
+d[29] => Qreg[29].DATAIN
+d[30] => Qreg[30].DATAIN
+d[31] => Qreg[31].DATAIN
+clk => Qreg[0].CLK
+clk => Qreg[1].CLK
+clk => Qreg[2].CLK
+clk => Qreg[3].CLK
+clk => Qreg[4].CLK
+clk => Qreg[5].CLK
+clk => Qreg[6].CLK
+clk => Qreg[7].CLK
+clk => Qreg[8].CLK
+clk => Qreg[9].CLK
+clk => Qreg[10].CLK
+clk => Qreg[11].CLK
+clk => Qreg[12].CLK
+clk => Qreg[13].CLK
+clk => Qreg[14].CLK
+clk => Qreg[15].CLK
+clk => Qreg[16].CLK
+clk => Qreg[17].CLK
+clk => Qreg[18].CLK
+clk => Qreg[19].CLK
+clk => Qreg[20].CLK
+clk => Qreg[21].CLK
+clk => Qreg[22].CLK
+clk => Qreg[23].CLK
+clk => Qreg[24].CLK
+clk => Qreg[25].CLK
+clk => Qreg[26].CLK
+clk => Qreg[27].CLK
+clk => Qreg[28].CLK
+clk => Qreg[29].CLK
+clk => Qreg[30].CLK
+clk => Qreg[31].CLK
+q[0] <= Qreg[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= Qreg[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= Qreg[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= Qreg[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= Qreg[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= Qreg[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= Qreg[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= Qreg[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= Qreg[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= Qreg[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= Qreg[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= Qreg[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= Qreg[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= Qreg[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= Qreg[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= Qreg[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= Qreg[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= Qreg[19].DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= Qreg[20].DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= Qreg[21].DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= Qreg[22].DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= Qreg[23].DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= Qreg[24].DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= Qreg[25].DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= Qreg[26].DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= Qreg[27].DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= Qreg[28].DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= Qreg[29].DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= Qreg[30].DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= Qreg[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|reg32:REG2
+d[0] => Qreg[0].DATAIN
+d[1] => Qreg[1].DATAIN
+d[2] => Qreg[2].DATAIN
+d[3] => Qreg[3].DATAIN
+d[4] => Qreg[4].DATAIN
+d[5] => Qreg[5].DATAIN
+d[6] => Qreg[6].DATAIN
+d[7] => Qreg[7].DATAIN
+d[8] => Qreg[8].DATAIN
+d[9] => Qreg[9].DATAIN
+d[10] => Qreg[10].DATAIN
+d[11] => Qreg[11].DATAIN
+d[12] => Qreg[12].DATAIN
+d[13] => Qreg[13].DATAIN
+d[14] => Qreg[14].DATAIN
+d[15] => Qreg[15].DATAIN
+d[16] => Qreg[16].DATAIN
+d[17] => Qreg[17].DATAIN
+d[18] => Qreg[18].DATAIN
+d[19] => Qreg[19].DATAIN
+d[20] => Qreg[20].DATAIN
+d[21] => Qreg[21].DATAIN
+d[22] => Qreg[22].DATAIN
+d[23] => Qreg[23].DATAIN
+d[24] => Qreg[24].DATAIN
+d[25] => Qreg[25].DATAIN
+d[26] => Qreg[26].DATAIN
+d[27] => Qreg[27].DATAIN
+d[28] => Qreg[28].DATAIN
+d[29] => Qreg[29].DATAIN
+d[30] => Qreg[30].DATAIN
+d[31] => Qreg[31].DATAIN
+clk => Qreg[0].CLK
+clk => Qreg[1].CLK
+clk => Qreg[2].CLK
+clk => Qreg[3].CLK
+clk => Qreg[4].CLK
+clk => Qreg[5].CLK
+clk => Qreg[6].CLK
+clk => Qreg[7].CLK
+clk => Qreg[8].CLK
+clk => Qreg[9].CLK
+clk => Qreg[10].CLK
+clk => Qreg[11].CLK
+clk => Qreg[12].CLK
+clk => Qreg[13].CLK
+clk => Qreg[14].CLK
+clk => Qreg[15].CLK
+clk => Qreg[16].CLK
+clk => Qreg[17].CLK
+clk => Qreg[18].CLK
+clk => Qreg[19].CLK
+clk => Qreg[20].CLK
+clk => Qreg[21].CLK
+clk => Qreg[22].CLK
+clk => Qreg[23].CLK
+clk => Qreg[24].CLK
+clk => Qreg[25].CLK
+clk => Qreg[26].CLK
+clk => Qreg[27].CLK
+clk => Qreg[28].CLK
+clk => Qreg[29].CLK
+clk => Qreg[30].CLK
+clk => Qreg[31].CLK
+q[0] <= Qreg[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= Qreg[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= Qreg[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= Qreg[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= Qreg[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= Qreg[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= Qreg[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= Qreg[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= Qreg[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= Qreg[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= Qreg[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= Qreg[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= Qreg[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= Qreg[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= Qreg[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= Qreg[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= Qreg[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= Qreg[19].DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= Qreg[20].DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= Qreg[21].DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= Qreg[22].DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= Qreg[23].DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= Qreg[24].DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= Qreg[25].DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= Qreg[26].DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= Qreg[27].DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= Qreg[28].DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= Qreg[29].DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= Qreg[30].DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= Qreg[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:PET0
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:1:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:2:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:3:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:4:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:5:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:6:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:7:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:8:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:9:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:10:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:11:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:12:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:13:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:14:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:15:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:16:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:17:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:18:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:19:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:20:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:21:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:22:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:23:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:24:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:25:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:26:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:27:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:28:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:29:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:30:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry|FullAdder:\FIRST:31:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

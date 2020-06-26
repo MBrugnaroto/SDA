@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Desktop\RippleCarry\simulation\qsim
+vRippleCarry
+Z1 IZjB?_EoJo^@YmY2GT?Dn51
+Z2 V@?NKSO6kz^^0BM<lNk;YT3
+Z3 dC:\Users\Aluno\Desktop\RippleCarry\simulation\qsim
+Z4 w1536776207
+Z5 8RippleCarry.vo
+Z6 FRippleCarry.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@ripple@carry
+!i10b 1
+Z10 !s100 833BXlff@kbh3KKB>HeB10
+!s85 0
+Z11 !s108 1536776210.043000
+Z12 !s107 RippleCarry.vo|
+Z13 !s90 -work|work|RippleCarry.vo|
+!s101 -O0
+vRippleCarry_vlg_check_tst
+!i10b 1
+!s100 d[[[dn2GZ_Mg`LMHZb2Ac2
+I`bE0>N?]Z@Nl>EN0zP4@m1
+V[XY=0:YgRTO9]2QKgmzii3
+R3
+Z14 w1536776206
+Z15 8RippleCarry.vt
+Z16 FRippleCarry.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1536776210.137000
+Z18 !s107 RippleCarry.vt|
+Z19 !s90 -work|work|RippleCarry.vt|
+!s101 -O0
+R8
+n@ripple@carry_vlg_check_tst
+vRippleCarry_vlg_sample_tst
+!i10b 1
+!s100 @Se9>?^O3hoHIidkFOR`R3
+ISU=5Piz37kPI:j?eXV>MH2
+VLk2[kidP9gclmdL1nOUNB2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@ripple@carry_vlg_sample_tst
+vRippleCarry_vlg_vec_tst
+!i10b 1
+!s100 5iK06M=bnXhLmBOHYj]e:1
+IGcl?M48@Gb<DaR1?<kEba3
+V]5]c@foO3hKLfK?0=dPRa1
+R3
+R14
+R15
+R16
+L0 236
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@ripple@carry_vlg_vec_tst

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Desktop\AdderLookahead\simulation\qsim
+vLookahead
+Z1 I3M5go`C]N9IXcP]IK4fVo1
+Z2 VgYccc:[T6^@LKH=Db9;j61
+Z3 dC:\Users\Aluno\Desktop\AdderLookahead\simulation\qsim
+Z4 w1537817739
+Z5 8Lookahead.vo
+Z6 FLookahead.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Lookahead.vo|
+Z9 o-work work -O0
+Z10 n@lookahead
+!i10b 1
+Z11 !s100 UUjNGW;_zlV1CQA64f9JB1
+!s85 0
+Z12 !s108 1537817739.702000
+Z13 !s107 Lookahead.vo|
+!s101 -O0
+vLookahead_vlg_check_tst
+!i10b 1
+Z14 !s100 9ZJ?8:Hj9oIEcWY`IRY>O1
+Z15 IiMPVPD;9?Z2K;5QZ[jPzY0
+Z16 V_N]nNBhZUM^EA?Pd[eY5a2
+R3
+Z17 w1537817738
+Z18 8Lookahead.vt
+Z19 FLookahead.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z20 !s108 1537817739.858000
+Z21 !s107 Lookahead.vt|
+Z22 !s90 -work|work|Lookahead.vt|
+!s101 -O0
+R9
+Z23 n@lookahead_vlg_check_tst
+vLookahead_vlg_sample_tst
+!i10b 1
+Z24 !s100 cU?[55KOnDn4Hj@5]OJK53
+Z25 Ik@z_lR>P3h5QFaeYE1]D10
+Z26 VfgDDd_?lUK]JO6Mmj]M]B3
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@lookahead_vlg_sample_tst
+vLookahead_vlg_vec_tst
+!i10b 1
+Z28 !s100 6`dPSAk0N6RQ]G@47b=lD0
+Z29 IL@i3TJBU>42=<j6X2FUV22
+Z30 Vm>]6;I3HmC>k<0TZ2z`Zh1
+R3
+R17
+R18
+R19
+Z31 L0 742
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@lookahead_vlg_vec_tst

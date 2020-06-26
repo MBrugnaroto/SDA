@@ -1,0 +1,20 @@
+Fitter Status : Successful - Mon Sep 24 21:29:18 2018
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : RippleCarry
+Top-level Entity Name : RippleCarry
+Family : Cyclone IV GX
+Device : EP4CGX22CF19C6
+Timing Models : Final
+Total logic elements : 110 / 21,280 ( < 1 % )
+    Total combinational functions : 82 / 21,280 ( < 1 % )
+    Dedicated logic registers : 96 / 21,280 ( < 1 % )
+Total registers : 96
+Total pins : 99 / 167 ( 59 % )
+Total virtual pins : 0
+Total memory bits : 0 / 774,144 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 80 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 4 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 4 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\João\Downloads\SDA\SDA\Macrofunction\simulation\qsim
+vmacrofunction
+Z1 !s100 3lh9PgXZY@z;E1ZHoGeiO1
+Z2 IPB[Y>7h:j=Bb5;WPGV<Fa3
+Z3 VN`T_0>Q9DY:HmEEHEJEgc1
+Z4 dC:\Users\Aluno\Desktop\Macrofunction\simulation\qsim
+Z5 w1537816504
+Z6 8macrofunction.vo
+Z7 Fmacrofunction.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|macrofunction.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1537816505.504000
+Z12 !s107 macrofunction.vo|
+!s101 -O0
+vmacrofunction_vlg_check_tst
+!i10b 1
+Z13 !s100 HjR@6jflb]`<D0^hmSBi`2
+Z14 IfhD;oFSJ;ZCcOiiH`DEGY0
+Z15 VUoaT^>9J3O=9<i]^hQc3O1
+R4
+R5
+Z16 8macrofunction.vt
+Z17 Fmacrofunction.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z18 !s108 1537816505.598000
+Z19 !s107 macrofunction.vt|
+Z20 !s90 -work|work|macrofunction.vt|
+!s101 -O0
+R10
+vmacrofunction_vlg_sample_tst
+!i10b 1
+Z21 !s100 <6f6L3HSOnfYVQB@jbTd^0
+Z22 IAJ<O5]2zOh2bdBaAm>O5F3
+Z23 Vf:mI7;aRM`eD1_8774;[32
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vmacrofunction_vlg_vec_tst
+!i10b 1
+!s100 nIn6^<HUjP[6?kKaJKWgA2
+Ij4LT7JW`mIOjPiGX9;ESi1
+Z24 VoNe3CiIfb4o=Zdl3hSl0Y0
+R4
+R5
+R16
+R17
+Z25 L0 713
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10

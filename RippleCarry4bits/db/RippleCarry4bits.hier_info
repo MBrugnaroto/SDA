@@ -1,0 +1,73 @@
+|RippleCarry4bits
+ci => FullAdder:PET0.cin
+a[0] => FullAdder:PET0.a
+a[1] => FullAdder:FIRST:1:PET1.a
+a[2] => FullAdder:FIRST:2:PET1.a
+a[3] => FullAdder:FIRST:3:PET1.a
+b[0] => FullAdder:PET0.b
+b[1] => FullAdder:FIRST:1:PET1.b
+b[2] => FullAdder:FIRST:2:PET1.b
+b[3] => FullAdder:FIRST:3:PET1.b
+s[0] <= FullAdder:PET0.s
+s[1] <= FullAdder:FIRST:1:PET1.s
+s[2] <= FullAdder:FIRST:2:PET1.s
+s[3] <= FullAdder:FIRST:3:PET1.s
+cout <= FullAdder:FIRST:3:PET1.cout
+
+
+|RippleCarry4bits|FullAdder:PET0
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry4bits|FullAdder:\FIRST:1:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry4bits|FullAdder:\FIRST:2:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RippleCarry4bits|FullAdder:\FIRST:3:PET1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
